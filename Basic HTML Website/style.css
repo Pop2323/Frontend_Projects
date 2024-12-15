@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font: "Handlee", cursive;
+    --secondary-font: "Saira Extra Condensed", serif;
+    --font: "Orbitron", serif;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 12px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    align-items: center;
+}
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-right: 15px;
+    gap: 10px;
+}
+
+.nav-links span {
+    margin: 0 5px 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #777;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.content h2 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.projects ul, .education ul {
+    list-style: none;
+}
+
+.projects li, .education li {
+    padding: 2px 0;
+}
+
+.projects li {
+    border-bottom: 1px solid black;
+}
+
+.work-experience {
+    border-left: 1px solid black;
+    padding-left: 25px;
+}
+
+.education {
+    border-left: 1px solid black;
+    padding-left: 25px;
+}
+
+.work-experience p {
+    margin-bottom: 15px;
+}
+
+.work-experience p:nth-child(2) {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.work-experience a {
+    color: blue;
+    text-decoration: none;
+}
+
+.education h3 {
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+.reviews {
+    margin: 30px 20px;
+    text-align: center;
+}
+
+.reviews h2 {
+    text-align: start;
+    font-weight: 300;
+}
+
+.review {
+    margin: 10px;
+    border: 1px solid black;
+    padding: 20px 10px;
+    border-radius: 14px;
+    text-align: start;
+}
+
+ .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+ }
+
+.review p.author {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .education {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .work-experience {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .projects li {
+        border: none;
+    }
+
+    .nav-links {
+        margin: 10px 0;
+        font-size: 12px;
+    }
+    .nav-logo {
+        margin: 10px 0;
+    }
+    .nav-logo img {
+        width: 30px;
+        height: 30px;
+    }
+    .logo {
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .projects li {
+        border: none;
+    }
+    .content {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        background-color: #9b9b9b;
+        margin: 10px;
+        border-radius: 12px;
+    }
+    .work-experience p:nth-child(2) {
+        border-bottom: none;
+    }
+    .projects {
+        border-bottom: 1px solid black;
+        padding: 10px;
+    }
+
+    .work-experience {
+        border-bottom: 1px solid black;
+    }
+
+    .reviews {
+        margin: 10px;
+        border-radius: 12px;
+        background-color: #ccccccb2;
+        padding: 10px;
+    }
+    
+}
