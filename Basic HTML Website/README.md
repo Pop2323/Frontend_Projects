@@ -1,6 +1,6 @@
 # HTML Layout:
 
-[Link](https://roadmap.sh/projects/basic-html-website)
+[Link]([https://roadmap.sh/projects/basic-html-website](https://roadmap.sh/projects/basic-html-website))
 
 - A header with navigation links.
 - A hero section displaying the main title and subtitle.
